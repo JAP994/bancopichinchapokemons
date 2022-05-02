@@ -12,6 +12,7 @@ export class PokemonComponent implements OnInit {
 
   pokemons:PokemonI[]=[];
   search:number=0;
+  count:number=0;
 
   constructor(private pokemonService:PokemonServicioService, private router:Router) { }
 
@@ -35,6 +36,13 @@ export class PokemonComponent implements OnInit {
   getAllPokemons() {
     this.pokemonService.getAllPokemons().subscribe(data =>{
       this.pokemons = data;
+      this.getCountPokemons();
+    });
+  }
+
+  getCountPokemons() {
+    this.pokemonService.getCountPokemons().subscribe(data =>{
+      this.count = data;
     });
   }
 

@@ -18,6 +18,11 @@ export class PokemonServicioService {
     return this.http.get<PokemonI[]>(direccion);
   }
 
+  getCountPokemons():Observable <number> {
+    let direccion = this.url+"count?idAuthor=1";
+    return this.http.get<number>(direccion);
+  }
+
   getByIdPokemons(id:number|null):Observable <PokemonI> {
     let direccion = this.url+id;
     return this.http.get<PokemonI>(direccion);
