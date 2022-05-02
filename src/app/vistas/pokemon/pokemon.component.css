@@ -87,27 +87,15 @@ img {
     text-align: right;
 }
 
-
-/* Style buttons */
-
 .btn {
     background-color: #6658F6;
-    /* Blue background */
     border: none;
-    /* Remove borders */
     color: white;
-    /* White text */
     padding: 12px 16px;
-    /* Some padding */
     font-size: 20px;
-    /* Set a font size */
     cursor: pointer;
-    /* Mouse pointer on hover */
     width: auto;
 }
-
-
-/* Darker background on mouse-over */
 
 .btn:hover {
     background-color: RoyalBlue;
@@ -115,28 +103,18 @@ img {
 
 .iconbtn {
     background-color: white;
-    /* Blue background */
     border: none;
-    /* Remove borders */
     color: #6658F6;
-    /* Some padding */
     font-size: 20px;
-    /* Set a font size */
     cursor: pointer;
-    /* Mouse pointer on hover */
     width: auto;
 }
 
 .iconbtn2 {
     background-color: white;
-    /* Blue background */
     border: none;
-    /* Remove borders */
     color: red;
-    /* Some padding */
     font-size: 20px;
-    /* Set a font size */
     cursor: pointer;
-    /* Mouse pointer on hover */
     width: auto;
 }
