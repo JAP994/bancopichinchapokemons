@@ -2,10 +2,13 @@
 
 ## Inicializar proyecto
 1.- Descargar zip o clonar el repositorio comando: git clone https://github.com/JAP994/bancopichinchapokemons.git.
+##
 2.- Ingresar a la carpeta del proyecto con cd nombredelproyecto
+##
 3.- Descargar los módulos comando: npm install.
+##
 4.- Correr el proyecto comando: ng serve
-
+##
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.4.
 
