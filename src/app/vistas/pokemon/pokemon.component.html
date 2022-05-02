@@ -20,6 +20,7 @@
     <div style="overflow-x:auto;">
         <table>
             <tr>
+                <th>Código</th>
                 <th>Nombre</th>
                 <th>Imagen</th>
                 <th>Ataque</th>
@@ -27,6 +28,7 @@
                 <th>Acciones</th>
             </tr>
             <tr *ngFor="let pokemon of pokemons">
+                <td>{{pokemon.id}}</td>
                 <td>{{pokemon.name}}</td>
                 <td><img src="{{pokemon.image}}" alt="{{pokemon.name}}"></td>
                 <td>{{pokemon.attack}}</td>
