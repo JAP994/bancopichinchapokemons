@@ -1,0 +1,89 @@
+.column1 {
+    width: 100%;
+    padding-bottom: 10px;
+    height: auto;
+    text-align: right;
+}
+
+
+/* Style buttons */
+
+.btn {
+    background-color: #6658F6;
+    /* Blue background */
+    border: none;
+    /* Remove borders */
+    color: white;
+    /* White text */
+    padding: 12px 16px;
+    /* Some padding */
+    font-size: 20px;
+    /* Set a font size */
+    cursor: pointer;
+    /* Mouse pointer on hover */
+    width: auto;
+}
+
+.seccion {
+    padding: 40px;
+    padding-top: 10px;
+}
+
+.formulario {
+    border: 2px solid rgb(187, 188, 199);
+    padding: 8px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.input {
+    height: 30px;
+    padding: 7px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #a198ff;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    text-align: center;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row {
+    text-align: center;
+}
+
+.dividir {
+    margin: 10px;
+}
+
+#slider {
+    accent-color: #6658F6;
+}
+
+#slider1 {
+    accent-color: #6658F6;
+}
+
+input:invalid {
+    box-shadow: 0 0 2px 1px rgb(172, 11, 11);
+    border: none;
+}
+
+input:focus:invalid {
+    box-shadow: none;
+}

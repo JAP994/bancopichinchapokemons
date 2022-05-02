@@ -11,11 +11,25 @@ import {  PokemonServicioService } from '../../servicios/pokemonServicio/pokemon
 export class PokemonComponent implements OnInit {
 
   pokemons:PokemonI[]=[];
+  search:number=0;
 
   constructor(private pokemonService:PokemonServicioService, private router:Router) { }
 
   ngOnInit(): void {
     this.getAllPokemons();
+  }
+
+  getByIdPokemons() {
+    this.pokemons = [];
+    this.pokemonService.getByIdPokemons(this.search).subscribe(data => {
+      console.log(data);
+      this.pokemons.push(data);
+      console.log(this.pokemons);
+    },
+    error => {
+      alert("No se encontro el pokemon");
+      this.getAllPokemons();
+    });
   }
 
   getAllPokemons() {
@@ -33,6 +47,9 @@ export class PokemonComponent implements OnInit {
   }
 
   pokemonDelete(id:number){
-    console.log(id);
+    this.pokemonService.deletePokemon(id).subscribe(data =>{
+      this.ngOnInit();
+      alert('Eliminado exitoso');
+    });
   }
 }
