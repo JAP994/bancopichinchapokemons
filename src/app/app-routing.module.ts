@@ -8,7 +8,7 @@ const routes: Routes = [
   { path:'', redirectTo:'pokemon', pathMatch:'full'},
   { path:'pokemon', component:PokemonComponent},
   { path:'nuevo-pokemon', component:PokemonNuevoComponent},
-  { path:'editar-pokemon', component:PokemonEditarComponent}
+  { path:'editar-pokemon/:id', component:PokemonEditarComponent}
 ];
 
 @NgModule({
