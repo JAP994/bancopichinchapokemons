@@ -26,7 +26,7 @@ export class PokemonComponent implements OnInit {
       this.pokemons.push(data);
     },
     error => {
-      alert("No se encontro el pokemon");
+      alert("No se encontro el Pokémon");
       this.getAllPokemons();
     });
   }
