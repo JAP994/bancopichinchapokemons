@@ -23,9 +23,7 @@ export class PokemonComponent implements OnInit {
   getByIdPokemons() {
     this.pokemons = [];
     this.pokemonService.getByIdPokemons(this.search).subscribe(data => {
-      console.log(data);
       this.pokemons.push(data);
-      console.log(this.pokemons);
     },
     error => {
       alert("No se encontro el pokemon");
