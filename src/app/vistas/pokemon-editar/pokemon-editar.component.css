@@ -66,3 +66,12 @@ button:hover {
 #slider1 {
     accent-color: #6658F6;
 }
+
+input:invalid {
+    box-shadow: 0 0 2px 1px rgb(172, 11, 11);
+    border: none;
+}
+
+input:focus:invalid {
+    box-shadow: none;
+}

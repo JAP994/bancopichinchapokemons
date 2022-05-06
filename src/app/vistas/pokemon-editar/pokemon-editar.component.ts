@@ -69,10 +69,18 @@ export class PokemonEditarComponent implements OnInit {
   }
 
   postForm(form:PokemonI){
-    this.pokemonService.putPokemons(form).subscribe(data =>{
-      this.router.navigate(['pokemon']);
-      alert('Guardado exitoso');
-    });
+
+    if (form.name=="") {
+      alert('Debe ingresar el nombre del Pokémon');
+    }else if (form.image=="") {
+      alert('Debe ingresar la url del Pokémon');
+    }
+     else {
+      this.pokemonService.postPokemon(form).subscribe(data =>{
+        alert('Pokémon Creado exitosamnete');
+        this.router.navigate(['pokemon']);
+      });
+    }
   }
 
 }

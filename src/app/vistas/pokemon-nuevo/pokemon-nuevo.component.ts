@@ -46,11 +46,14 @@ export class PokemonNuevoComponent implements OnInit {
     }
   }
   postForm(form:PokemonI){
-    if (form.name=="" || form.image=="") {
-      alert('Creado exitoso');
-    } else {
+    if (form.name=="") {
+      alert('Debe ingresar el nombre del Pokémon');
+    }else if (form.image=="") {
+      alert('Debe ingresar la url del Pokémon');
+    }
+     else {
       this.pokemonService.postPokemon(form).subscribe(data =>{
-        alert('Creado exitoso');
+        alert('Pokémon Creado exitosamnete');
         this.router.navigate(['pokemon']);
       });
     }
